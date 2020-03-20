@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img id="logo" src="{{ asset('img/logo.jpeg') }}" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="">Menu 2</a>
+                </li>
+                <li>
+                    <a href="">Menu 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>La liste des articles est :</h1>
+        <section>
+        {% for key, chaquearticle in articles %}
+            <div>
+                <div>
+                    <img src="{{ chaquearticle.image }}" alt="image">
+                </div>
+                <h2>
+                    <a id="lienTitre" href="{{ path('article', {'id' : key}) }}">{{ chaquearticle.title }}</a>
+                </h2>
+            </div>
+        {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="{{ path('home') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="">Menu 2</a>
+                </li>
+                <li>
+                    <a href="">Menu 3</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

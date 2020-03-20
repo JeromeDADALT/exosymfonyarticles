@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+a:hover {
+    color: #718C00;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+h2 {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+#logo {
+    width: 100%;
+}
+
+#lienTitre {
+    color: #8959A8;
+}
+
+#lienTitre:hover {
+    color: #F5871F;
+}
+
+body header, body footer {
+    background-color: #5eb5e0;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body footer {
+    justify-content: space-around;
+}
+
+body header div {
+    width: 10%;
+    padding: 20px;
+}
+
+body header nav, body footer div {
+    display: flex;
+    padding: 20px;
+}
+
+body header nav ul, body footer div ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body header nav ul li, body footer div ul li {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 130px;
+    list-style: none;
+}
+
+body main {
+    padding: 40px;
+}
+
+body main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body main section div {
+    float: left;
+    height: auto;
+}
+
+body main article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body main article div div {
+    width: 40%;
+}
+
+body main article div div img {
+    width: 100%;
+    height: auto;
+ }
+
